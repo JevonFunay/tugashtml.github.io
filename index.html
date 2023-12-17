@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="text-align: center; font-size: xx-large;"><b>
+        
+        
+        Yokoso
+
+
+    </header></b>
+    <div style="display: flex; flex-direction: row">
+    
+        <section id="foto">
+                <p style="font-size: xx-large;"><b>
+                    About Me
+                </p></b>
+                <img src="WIN_20231217_18_49_43_Pro.jpg" width="560">
+        </section>
+        <div>
+
+            <section id="tentang-saya">
+                <b style="font-size: x-large; ">
+                    Jevon Christian Putra Funay
+                </b>
+                <p>
+                    @jevoncpf 
+                </p>
+                <b style="font-size: larger;">
+                    NTT, Kupang
+                </b>
+                <p style="font-size: x-large;"><b>
+                    Universitas Kristen Duta Wacana
+                </p></b>
+            </section>
+            <section id="keterampilan">
+                <p>
+                    <h3>SkillSet</h3>
+                    <ol>
+                        <li>HTML</li>
+                        <li>C</li>
+                        <li>Python</li>
+                    </ol>
+                
+            </section>
+        </div>
+    </div>
+    
+    <button id="tombolGantiWarna" onclick="gantiWarnaRandom()"> 
+        pencet gw bang
+    </button>
+
+    <footer style="font-size: x-large; text-align: center;"><b>
+        -1 Lover
+        
+    </footer></b>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["red", "blue", "green", "white"];    
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = "gantiWarnaRandom";
+        tombolGantiWarna;
+    </script>
+</body>
+</html>
